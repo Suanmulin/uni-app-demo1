@@ -5,9 +5,17 @@
     "pages/cate/cate",
     "pages/my/my"
   ],
-  "subPackages": [],
+  "subPackages": [
+    {
+      "root": "subpkg",
+      "pages": [
+        "goods_detail/goods_detail",
+        "goods_list/goods_list"
+      ]
+    }
+  ],
   "window": {
-    "navigationBarTextStyle": "black",
+    "navigationBarTextStyle": "white",
     "navigationBarTitleText": "商城小程序",
     "navigationBarBackgroundColor": "#C00000",
     "backgroundColor": "#F8F8F8"

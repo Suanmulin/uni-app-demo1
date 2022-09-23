@@ -37,8 +37,34 @@
         }
         
     ],
+    "subPackages": [
+      {
+        "root": "subpkg",
+        "pages": [
+          
+        {
+                    "path" : "goods_detail/goods_detail",
+                    "style" :                                                                                    
+                {
+                    "navigationBarTitleText": "",
+                    "enablePullDownRefresh": false
+                }
+                
+                }
+                ,{
+                    "path" : "goods_list/goods_list",
+                    "style" :                                                                                    
+                {
+                    "navigationBarTitleText": "",
+                    "enablePullDownRefresh": false
+                }
+                
+                }
+            ]
+      }
+    ],
 	"globalStyle": {
-		"navigationBarTextStyle": "black",
+		"navigationBarTextStyle": "white",
 		"navigationBarTitleText": "商城小程序",
 		"navigationBarBackgroundColor": "#C00000",
 		"backgroundColor": "#F8F8F8",
