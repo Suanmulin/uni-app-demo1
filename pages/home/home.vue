@@ -1,5 +1,9 @@
 <template>
   <view>
+    <!-- 搜索组件 -->
+    <view class="search-box">
+      <my-saerch></my-saerch>
+    </view>
     <!-- 轮播图 -->
     <swiper :indicator-dots="true" :autoplay="true" :interval="3000" :duration="1000" :circular="true">
       <swiper-item v-for="(item,i) in swiperList" :key="i">
@@ -131,5 +135,11 @@ swiper {
   // 一行放不下自动换行
   flex-wrap: wrap;
   justify-content: space-around;
+}
+//搜索组件吸顶效果
+.search-box{
+  position: sticky;//粘性定位元素
+  top:0;
+  z-index: 999;//权重，层级置顶
 }
 </style>

@@ -1,5 +1,7 @@
 <template>
   <view>
+    <!-- 自定义组件 搜索  -->
+    <my-saerch :bgcolor="'black'" :rad="50" @myclick="gotoSearch"></my-saerch>
     <view class="scroll-view-container">
       <!-- 左 -->
       <scroll-view class="left-scroll-view"  :style="{height: wh + 'px'}" scroll-y="true">
@@ -44,11 +46,16 @@
       // 获取当前系统的信息
       const sysInfo = uni.getSystemInfoSync()
             // 为 wh 窗口可用高度动态赋值
-      this.wh = sysInfo.windowHeight
+      this.wh = sysInfo.windowHeight -50//搜索栏高50
       this.getCateList()
     },
     methods:{
-      async getCateList(){
+      gotoSearch(){//搜索栏
+        uni.navigateTo({
+          url:'/subpkg/search/search'
+        })
+      }
+      ,async getCateList(){
         const{data:res} = await uni.$http.get('/categories')
         if(res.meta.status !== 200) return uni.$showMsg()
         this.cateList = res.message
