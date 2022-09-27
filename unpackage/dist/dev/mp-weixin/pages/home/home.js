@@ -98,7 +98,7 @@ var components
 try {
   components = {
     mySaerch: function() {
-      return __webpack_require__.e(/*! import() | components/my-saerch/my-saerch */ "components/my-saerch/my-saerch").then(__webpack_require__.bind(null, /*! @/components/my-saerch/my-saerch.vue */ 59))
+      return __webpack_require__.e(/*! import() | components/my-saerch/my-saerch */ "components/my-saerch/my-saerch").then(__webpack_require__.bind(null, /*! @/components/my-saerch/my-saerch.vue */ 64))
     }
   }
 } catch (e) {

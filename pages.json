@@ -56,13 +56,14 @@
                     "style" :                                                                                    
                 {
                     "navigationBarTitleText": "",
-                    "enablePullDownRefresh": false
+                    "enablePullDownRefresh": false,
+                    "onReachBottomDistance": 150
                 }
                 
                 }
                 ,{
                     "path" : "search/search",
-                    "style" :                                                                                    
+                    "style" :                                                                        
                 {
                     "navigationBarTitleText": "",
                     "enablePullDownRefresh": false
